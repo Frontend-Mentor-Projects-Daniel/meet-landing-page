@@ -119,19 +119,150 @@ select {
 /**------------------- 
 **    UTILITIES
 --------------------*/
+.hide {
+  display: none !important;
+}
+
+.header--primary {
+  color: hsl(var(--clr-ebony-clay));
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-black);
+  line-height: var(--lh-h1);
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 1.8125rem;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
 
 /**------------------- 
 **     GENERAL
 --------------------*/
 body {
+  background-color: hsl(var(--clr-alabaster-white));
   font-family: var(--ff-red-hat-display);
+  padding-top: 3rem;
 }
 
-.main {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
+/**------------------- 
+**      HEADER
+--------------------*/
+.header {
+  width: clamp(23ch, 100%, 133ch);
+}
 
-  width: 100vw;
-  min-height: 100vh; */
+/**------------------- 
+**       LOGO
+--------------------*/
+.logo {
+  margin-bottom: 3.375rem;
+}
+
+.logo > img {
+  margin: 0 auto;
+}
+
+/**------------------- 
+**       HERO
+--------------------*/
+@media only screen and (min-width: 90em) {
+  .hero {
+    display: grid;
+    grid-template-columns: auto minmax(min-content, max-content) auto;
+  }
+
+  .hero__content {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .hero__image-left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .hero__image-right {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+
+/**------------------- 
+**      IMAGES
+--------------------*/
+.hero__image,
+.hero__image--desktop {
+  margin-bottom: 3rem;
+}
+
+.hero__image {
+}
+
+.hero__image--desktop {
+}
+
+/**------------------- 
+**   TEXT CONTENT
+--------------------*/
+.hero__content {
+  width: clamp(23ch, 100%, 38ch);
+  margin: 0 auto;
+}
+
+.hero__text {
+  color: hsl(var(--clr-oslo-grey));
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-body);
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 90em) {
+  .hero__content {
+    width: clamp(23ch, 100%, 52ch);
+  }
+
+  .hero__content > .header--primary {
+    padding: 0 4rem;
+  }
+}
+
+/**------------------- 
+**     BUTTONS
+--------------------*/
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.btn--download {
+  background-color: hsl(var(--clr-faded-blue));
+  height: 3.625rem;
+  width: 12.0625rem;
+}
+
+.btn--download > span {
+  color: hsl(var(--clr-light-blue));
+}
+
+.btn--info {
+  background-color: hsl(var(--clr-deep-lavender));
+  height: 3.625rem;
+  width: 8.6875rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .hero__buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
