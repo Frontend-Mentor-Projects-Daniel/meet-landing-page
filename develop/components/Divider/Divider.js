@@ -13,7 +13,7 @@ function define(html) {
       shadow.innerHTML = html;
 
       // set number
-      console.log(this.shadowRoot);
+      // console.log(this.shadowRoot);
       const dividerNumber = this.shadowRoot.children[2].children[1];
       const num = this.getAttribute('number');
       dividerNumber.innerText = num;
