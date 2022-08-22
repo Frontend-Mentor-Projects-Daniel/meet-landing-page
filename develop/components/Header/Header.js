@@ -29,11 +29,10 @@ function define(html) {
     // METHODS
     observeScreen(...args) {
       const [heroSmall, heroLeft, heroRight] = args;
-      console.log(heroSmall, heroLeft, heroRight);
 
       const observer = new ResizeObserver((entries) => {
         const bodyElement = entries[0];
-        const isDesktop = bodyElement.contentRect.width >= 1440;
+        const isDesktop = bodyElement.contentRect.width >= 1400;
 
         if (isDesktop) {
           heroSmall.classList.add('hide');

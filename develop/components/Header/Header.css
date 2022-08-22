@@ -20,7 +20,7 @@
 /**------------------- 
 **       HERO
 --------------------*/
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 1400px) {
   .hero {
     display: grid;
     grid-template-columns: auto minmax(min-content, max-content) auto;
@@ -72,7 +72,7 @@
   text-align: center;
 }
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 1400px) {
   .hero__content {
     width: clamp(23ch, 100%, 52ch);
   }

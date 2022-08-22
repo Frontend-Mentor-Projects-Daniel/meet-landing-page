@@ -1,0 +1,38 @@
+/**------------------- 
+**     DIVIDER
+--------------------*/
+.divider {
+  display: inline-block;
+  position: relative;
+}
+
+/**------------------- 
+**     OVERLINE
+--------------------*/
+.overline {
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 1px solid hsl(var(--clr-oslo-grey));
+  height: 5.25rem;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  width: 1px;
+}
+
+/**------------------- 
+**      NUMBER
+--------------------*/
+.divider__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid hsl(var(--clr-oslo-grey), 0.25);
+  border-radius: 50%;
+  color: hsl(var(--clr-oslo-grey));
+  height: 3.5rem;
+  width: 3.5rem;
+}
