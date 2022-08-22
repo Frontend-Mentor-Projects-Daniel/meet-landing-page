@@ -2,12 +2,13 @@
 **      HEADER
 --------------------*/
 .header {
+  margin: 0 auto;
   width: clamp(23ch, 100%, 133ch);
 }
 
 /**------------------- 
-  **       LOGO
-  --------------------*/
+**       LOGO
+--------------------*/
 .logo {
   margin-bottom: 3.375rem;
 }
@@ -17,8 +18,8 @@
 }
 
 /**------------------- 
-  **       HERO
-  --------------------*/
+**       HERO
+--------------------*/
 @media only screen and (min-width: 90em) {
   .hero {
     display: grid;
@@ -42,22 +43,21 @@
 }
 
 /**------------------- 
-  **      IMAGES
-  --------------------*/
+**      IMAGES
+--------------------*/
 .hero__image,
 .hero__image--desktop {
   margin-bottom: 3rem;
 }
 
 .hero__image {
-}
-
-.hero__image--desktop {
+  display: flex;
+  justify-content: center;
 }
 
 /**------------------- 
-  **   TEXT CONTENT
-  --------------------*/
+**   TEXT CONTENT
+--------------------*/
 .hero__content {
   width: clamp(23ch, 100%, 38ch);
   margin: 0 auto;
@@ -83,8 +83,8 @@
 }
 
 /**------------------- 
-  **     BUTTONS
-  --------------------*/
+**     BUTTONS
+--------------------*/
 .hero__buttons {
   display: flex;
   align-items: center;
@@ -100,6 +100,10 @@
   width: 12.0625rem;
 }
 
+.btn--download:hover {
+  background-color: hsl(192, 54%, 64%);
+}
+
 .btn--download > span {
   color: hsl(var(--clr-light-blue));
 }
@@ -108,6 +112,10 @@
   background-color: hsl(var(--clr-deep-lavender));
   height: 3.625rem;
   width: 8.6875rem;
+}
+
+.btn--info:hover {
+  background-color: hsl(268, 55%, 71%);
 }
 
 @media only screen and (min-width: 48em) {
