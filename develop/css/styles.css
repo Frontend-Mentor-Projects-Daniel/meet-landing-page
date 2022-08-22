@@ -47,10 +47,10 @@ select {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms \!important;
-    animation-iteration-count: 1 \!important;
-    transition-duration: 0.01ms \!important;
-    scroll-behavior: auto \!important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
@@ -58,15 +58,62 @@ select {
 **   CUSTOM PROPS
 --------------------*/
 :root {
-/* COLOURS */
+  /* COLOURS */
+  --clr-faded-blue: 192, 37%, 48%;
+  --clr-deep-lavender: 268, 34%, 53%;
+  --clr-ebony-clay: 240, 21%, 20%;
+  --clr-oslo-grey: 240, 10%, 57%;
+  --clr-light-blue: 192, 90%, 77%;
+  --clr-light-violet: 268, 100%, 86%;
+  --clr-alabaster-white: 0, 0%, 98%;
 
   /* FONT FAMILY */
+  --ff-red-hat-display: 'Red Hat Display', sans-serif;
 
   /* FONT SIZE */
+  --fs-h1: 2.5rem;
+  --fs-h2: 2rem;
+  --fs-body: 1rem;
+  --fs-overline: 1rem;
+
+  /* LINE HEIGHT */
+  --lh-h1: 2.75rem;
+  --lh-h2: 2.25rem;
+  --lh-body: 1.625rem;
+  --lh-overline: 1.625rem;
 
   /* FONT WEIGHT */
+  --fw-medium: 500;
+  --fw-black: 900;
 
   /* BREAKPOINTS */
+  --bp-mobile: 23.4375em;
+  --bp-tablet: 48em;
+  --bp-desktop: 90em;
+}
+
+@media only screen and (min-width: 48em) {
+  :root {
+    --fs-h1: 3rem;
+    --fs-h2: 2.5rem;
+    --fs-body: 1rem;
+
+    --lh-h1: 3rem;
+    --lh-h2: 2.75rem;
+    --lh-body: 1.625rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  :root {
+    --fs-h1: 4rem;
+    --fs-h2: 2.5rem;
+    --fs-body: 1.125rem;
+
+    --lh-h1: 4rem;
+    --lh-h2: 2.75rem;
+    --lh-body: 1.625rem;
+  }
 }
 
 /**------------------- 
@@ -77,13 +124,14 @@ select {
 **     GENERAL
 --------------------*/
 body {
+  font-family: var(--ff-red-hat-display);
 }
 
 .main {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
 
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100vh; */
 }
