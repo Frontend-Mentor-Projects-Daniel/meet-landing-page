@@ -1,0 +1,28 @@
+/**-------------------- 
+**   USER IMAGES
+---------------------*/
+.user-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-image {
+  flex: 0 1 9.4375rem;
+
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1400px) {
+  .user-image {
+    flex: 0 1 10.25rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  .user-image {
+    flex: 0 1 15.9375rem;
+  }
+}
