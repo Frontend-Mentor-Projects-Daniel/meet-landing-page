@@ -30,6 +30,7 @@
   align-items: center;
   justify-content: center;
 
+  background-color: hsl(var(--clr-alabaster-white));
   border: 1px solid hsl(var(--clr-oslo-grey), 0.25);
   border-radius: 50%;
   color: hsl(var(--clr-oslo-grey));

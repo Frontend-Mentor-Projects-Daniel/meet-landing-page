@@ -12,13 +12,13 @@
   text-transform: uppercase;
 }
 
-.info > .header--secondary {
+.info .header--secondary {
   margin: 0 auto;
   max-width: clamp(4ch, 100%, 14ch);
 }
 
 @media only screen and (min-width: 48em) {
-  .info > .header--secondary {
+  .info .header--secondary {
     max-width: clamp(4ch, 100%, 15ch);
   }
 }
