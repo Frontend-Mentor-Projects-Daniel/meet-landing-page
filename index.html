@@ -28,7 +28,11 @@
       src="./develop/components/Divider/Divider.js"
       type="module"
     ></script>
-    <script src="./develop/components/UserImages/UserImages.js" defer></script>
+    <script
+      src="./develop/components/UserImages/UserImages.js"
+      type="module"
+    ></script>
+    <script src="./develop/components/Info/Info.js" type="module"></script>
 
     <title>Frontend Mentor | Meet landing page</title>
   </head>
@@ -39,18 +43,17 @@
       <divider-component number="01"></divider-component>
     </section>
 
-    <section class="section-users">
-      <user-images-component></user-images-component>
-    </section>
+    <main>
+      <section class="section-users">
+        <user-images-component></user-images-component>
+      </section>
+
+      <section class="section-info">
+        <info-component></info-component>
+      </section>
+    </main>
 
     <!--
-  01
-  Built for modern use
-
-  Smarter meetings, all in one place
-
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
 
   02
   Experience more together
