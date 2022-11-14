@@ -54,7 +54,7 @@ You can find the live version of the site [here](https://comforting-conkies-eb78
 ## Author
 
 - [Portfolio Website](https://daniel-arzani-portfolio.netlify.app/)
-- [Frontend Mentor Profile](https://daniel-arzani-portfolio.netlify.app/)
+- [Frontend Mentor Profile](https://www.frontendmentor.io/profile/DanielArzani)
 
 ## Acknowledgments
 
